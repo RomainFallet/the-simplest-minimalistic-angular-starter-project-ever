@@ -24,7 +24,7 @@ _Be sure to use the same major version in order to have the same result._
 ## Jumping straight in
 
 ```
-git clone git@github.com:RomainFallet/the-simplest-minimalistic-angular-starter-project-ever.git
+git clone https://github.com/RomainFallet/the-simplest-minimalistic-angular-starter-project-ever.git
 ```
 
 Want to understand exactly what you are doing? Just follow what's next to produce the exact same project.
