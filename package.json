@@ -1,0 +1,11 @@
+{
+    "name": "the-simplest-minimalistic-angular-starter-project-ever",
+    "version": "1.0.0",
+    "dependencies": {
+        "@angular/common": "8.2.0",
+        "@angular/core": "8.2.0",
+        "@angular/platform-browser": "8.2.0",
+        "rxjs": "6.5.2",
+        "zone.js": "0.10.1"
+    }
+}
