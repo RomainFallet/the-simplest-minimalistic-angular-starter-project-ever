@@ -3,3 +3,4 @@ node_modules
 src/**/*.js
 src/**/*.metadata.json
 src/**/*.ngsummary.json
+.npmrc
