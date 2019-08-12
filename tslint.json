@@ -1,0 +1,3 @@
+{
+  "extends": ["codelyzer", "angular-tslint-rules", "tslint-config-standard"]
+}
