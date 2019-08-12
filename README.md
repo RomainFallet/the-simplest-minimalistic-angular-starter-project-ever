@@ -369,11 +369,17 @@ You'll then need to create a very complicated config file at the root of your pr
 
 ```javascript
 module.exports = {
-    mode: "development"
+    mode: "development",
+    devtool: "source-map"
 };
 ```
 
-And, that's it. Webpack will look by default for your `./src/index.js` file and compile everything under `./dist/main.js`.
+And, that's it.
+
+-   The `mode` option tells Webpack to run in development mode, which is faster and therefore adapted for a development process.
+-   The `devtool` option tells Webpack to create a source map, allowing us to debug our app in the browser more easily.
+
+Webpack will look by default for your `./src/index.js` file and compile everything under `./dist/main.js`.
 
 You simply have to run the command:
 ```
