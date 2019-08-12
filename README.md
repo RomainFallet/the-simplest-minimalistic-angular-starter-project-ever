@@ -321,7 +321,7 @@ var AppComponentNgFactory = i0.ɵccf("app-root", i1.AppComponent, View_AppCompon
 export { AppComponentNgFactory as AppComponentNgFactory };
 ```
 
-Now that the `ngfactory.js` file is generated, we don't have an error anymore, our index file can import it. The others `.json` files are only containing metadatas.
+Now that the `ngfactory.js` file is generated, we don't have error anymore, our index file can import it. The others `.json` files are only containing metadatas.
 
 ## Why do we need to bundle everything?
 
@@ -345,7 +345,7 @@ And when we import a dependency with TypeScript, its only role is to get the typ
 
 That's why we just need to name the dependency so that TypeScript can search the types for us (according to the module resolution algorithm set up in `./tsconfig.json`).
 
-So we definitely need another tool that will search the `.js` files behind our dependencies keywords and combine them with the rest of our code so all of it can work properly.
+So we definitely need another tool that will search the `.js` files behind our dependencies keywords and combine them with the rest of our code so that all of it can work properly.
 
 For example, for `@angular/core`, it will be `./node_modules/@angular/core/bundles/core.umd.js`.
 
@@ -393,9 +393,7 @@ Isn't it glorious?
 
 Well, even if it's only two commands, this will be quite repetitive to run them each time we want to see new changes of our app during the development process.
 
-Let's automate this for a development purpose.
-
-## Let's explode the power of automation!
+## Let's unlock the power of automation!
 
 You will need once again a lot a configuration to achieve this. To automate the Angular/TypeScript compilation, just run:
 
@@ -421,7 +419,7 @@ Now, you just have to reload your web page after each changes to see (it will no
 
 But wouldn't it be better if the browser reloads itself once the Webpack bundling is finished? Automatically?
 
-Of course, it would be! Let's do it with the Lite server package (Unix users will need to add `sudo` before this command):
+Of course, it would be! Let's do it with the `lite-server` package (Unix users will need to add `sudo` before this command):
 
 ```
 npm install -g lite-server@2
@@ -461,4 +459,4 @@ webpack --mode=production
 
 ![Capture du 2019-08-09 19-49-30](https://user-images.githubusercontent.com/6952638/62798558-d1fc7500-bade-11e9-8f6a-36e5e4c2093d.png)
 
-We have now a production build, ready to be deployed!
+We have now a production build, ready to be deployed! To deploy your app, you only have to upload your `./index.html` and `./dist/main.js` files in the web server of your choice.
